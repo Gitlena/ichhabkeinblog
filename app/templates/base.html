@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+    <title>{{title}} - IchHabKeinBlog.de</title>
+    {% else %}
+    <title>ihkb.de</title>
+    {% endif %}
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/bootstrap.responsive.css" rel="stylesheet">
+    <script src="/static/js/jquery-1.11.0.js"></script>
+    <script src="/static/js/bootstrap.mini.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+      {% block content %}{% endblock %}
+                <li><a href="#">bla</a></li>
+                {% for links in mainmenu %}
+                <li><a href="{{links.name}}">as{{links.name}}</a></li>
+                {% endfor %}
+
+
+</body>
+</html>
