@@ -15,11 +15,12 @@
 <body>
 
 
-      {% block content %}{% endblock %}
-                <li><a href="#">bla</a></li>
-                {% for links in mainmenu %}
-                <li><a href="{{links.name}}">as{{links.name}}</a></li>
-                {% endfor %}
+    {% block content %}{% endblock %}
+
+
+    {% for links in mainmenu %}
+    <li><a href="{{links.name}}">as{{links.name}}</a></li>
+    {% endfor %}
 
 
 </body>

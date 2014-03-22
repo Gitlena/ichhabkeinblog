@@ -7,7 +7,7 @@ from app import app
 @app.route('/index', methods=['GET', 'POST'])
 @app.route('/index/<int:page>', methods=['GET', 'POST'])
 def index():
-    mainmenu = [{'name': 'linux'}, {'name': 'aktuell'}, {'name': 'hw-projects'}, {'name': 'link4'}]
+    mainmenu = [{'name': 'login'}, {'name': 'logout'}, {'name': 'hw-projects'}, {'name': 'link4'}]
     return render_template('index.html',
         mainmenu = mainmenu,
         title = 'Home',

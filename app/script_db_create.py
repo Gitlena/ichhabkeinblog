@@ -1,5 +1,7 @@
 #!flask/bin/python
 
+#script copied from Miguel Grinberg http://blog.miguelgrinberg.com/
+
 from migrate.versioning import api
 from config import SQLALCHEMY_DATABASE_URI
 from config import SQLALCHEMY_MIGRATE_REPO
